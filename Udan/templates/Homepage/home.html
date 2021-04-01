@@ -1,0 +1,108 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+        <head>
+            <title>Food delivery</title>
+            <link rel="stylesheet" href="{% static 'Homepage/styles.css' %}">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+            <style>
+                .column {
+                    float: left;
+                    width: 50%;
+                    padding:10px;
+                }
+                  
+                  /* Clear floats after the columns */
+                .row:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
+            </style>
+        </head>
+        <body>
+            <section class="header">
+                <div class="buttons">
+                    <a href="#" class="btn btn-dark btn-lg" role="button">Cart</a>
+                    <a href="./index.html" class="btn btn-dark btn-lg" role="button">Logout</a>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <img src="{% static 'Homepage/images/3.jpeg' %}" alt="" width="600" style="margin-left: 2%;">
+                    </div>
+                    <div class="column">
+                        <p>It is online food delivery app located at south indian village. In this you will get home made food.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features">
+                <h1>Restaurants</h1>
+
+                <div class="container">
+                <div class="row">
+
+                <div class="col-md-4">
+                    <a href="../MEADE/index.html" class="feature-box">
+                    <div class="feature-img"><img src="{% static 'MEADE/images/4.jpeg' %}" alt="1"></div>
+                    <div class="feature-details">
+                        <h4>MEADE</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        </div>
+                        <p> Pizzeria and more </p>
+                        <span><i class="fa fa-map-marker"></i>Shop No-10/11 phulora chs, opp. XL, IIT, Powai, Mumbai, Maharashtra 400076</span>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="../PowaiDarbar/index.html" class="feature-box">
+                    <div class="feature-img"><img src="../PowaiDarbar/3.webp" alt="2"></div>
+                    <div class="feature-details">
+                        <h4>Powai Darbar</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        </div>
+                        <p>North Indian, Chinese, Kebab, Maharashtrian, Mughlai  </p>
+                        <span><i class="fa fa-map-marker"></i>76/1, Bhavani Industrial Estate, near IIT Market, Tirandaz, Powai, Mumbai, Maharashtra 400076</span>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="../Powaisocial/index.html" class="feature-box">
+                    <div class="feature-img"><img src="../Powaisocial/images/2.webp" alt="3"></div>
+                    <div class="feature-details">
+                        <h4>Powai Social</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        </div>
+                        <p> Bar,North Indian, Momos, Desserts, Beverages</p>
+                        <span><i class="fa fa-map-marker"></i>Delphi B Wing, Orchard Ave, Hiranandani Gardens, Panchkutir Ganesh Nagar, Powai, Mumbai, Maharashtra 400076</span>
+                    </div>
+                    </a>
+                </div>
+                
+                </div>
+                </div>
+            </section>
+
+
+
+
+        </body>
+</html>
