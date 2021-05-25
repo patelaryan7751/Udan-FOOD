@@ -3,6 +3,7 @@
   var firebaseConfig = {
     apiKey: "AIzaSyBb55BaJ6cURgS9PwtXcrDHJjqyRq5mmTk",
     authDomain: "udan-food.firebaseapp.com",
+    databaseURL: "https://udan-food-default-rtdb.firebaseio.com",
     projectId: "udan-food",
     storageBucket: "udan-food.appspot.com",
     messagingSenderId: "396627571354",

@@ -1,12 +1,10 @@
 var config = {
- apiKey: "AIzaSyDrT5NaAzDvBgVJp-2B4bd2kU5d5xHEFM8",
-    authDomain: "missionedstore.firebaseapp.com",
-    databaseURL: "https://missionedstore-default-rtdb.firebaseio.com",
-    projectId: "missionedstore",
-    storageBucket: "missionedstore.appspot.com",
-    messagingSenderId: "414324993753",
-    appId: "1:414324993753:web:9ad07d7598b9b778ec58c8",
-    measurementId: "G-WEGDTRKTWP"
+    apiKey: "AIzaSyBb55BaJ6cURgS9PwtXcrDHJjqyRq5mmTk",
+    authDomain: "udan-food.firebaseapp.com",
+    projectId: "udan-food",
+    storageBucket: "udan-food.appspot.com",
+    messagingSenderId: "396627571354",
+    appId: "1:396627571354:web:63f6c7b28d609e7a11e523"
  
   };
      firebase.initializeApp(config);
@@ -44,6 +42,6 @@ firebase.auth().onAuthStateChanged(function(user) {
    } );
    }
     else{
-    window.open('index1.html','_self');
+    window.open('login.html','_self');
     }
 });

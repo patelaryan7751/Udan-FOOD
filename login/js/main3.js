@@ -68,21 +68,20 @@ document.querySelector('#btn-signup').onclick = function(){
         var kpliref = firebase.database().ref(`credential/${sessionStorage.getItem("auvmkey")}/`);
         var data={
             phone: phone,
-            address1: address1,
-            address2: address2,
+            add1: address1,
+            add2: address2,
             name: name,
-            coins:"100",
             email:sessionStorage.getItem("vmkey"),
             uid:sessionStorage.getItem("auvmkey"),
             famlogin:"0"
     }
-     kpliref.set(data).then(function() {
+    kpliref.set(data).then(function() {
     firebase.auth().signOut();
     sessionStorage.clear();
          
     var pq=document.getElementById("loadar");
     pq.style.display="none";
-    window.open('../index.html','_self');
+    window.open('./index.html','_self');
     
 });
  
@@ -108,6 +107,6 @@ firebase.auth().onAuthStateChanged(function(user) {
     else{
         var pq=document.getElementById("loadar");
     pq.style.display="none";
-    window.open('index.html','_self');
+    window.open('../index.html','_self');
     }
 });
